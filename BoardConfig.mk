@@ -81,6 +81,8 @@ BOARD_KERNEL_CMDLINE += service_locator.enable=1
 BOARD_KERNEL_CMDLINE += swiotlb=0
 BOARD_KERNEL_CMDLINE += video=vfb:640x400,bpp=32,memsize=3072000
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/1d84000.ufshc
+BOARD_KERNEL_CMDLINE += androidboot.mode=recovery 
+BOARD_KERNEL_CMDLINE += twrpfastboot=1
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := nabu_user_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/nabu
